@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import TodoList from './components/TodoList';
 import AddTodo from './components/AddToDo';
+import ExampleComponent from './components/ExampleComponent';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -19,6 +20,7 @@ function App() {
       <h1>Todo List</h1>
       <TodoList todos={todos} onRemoveTodo={removeTodo} />
       <AddTodo onAddTodo={addTodo} />
+      <ExampleComponent/>
     </div>
   );
 }
